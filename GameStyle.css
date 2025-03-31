@@ -1,0 +1,522 @@
+/***********/
+/* GENERAL */
+/***********/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .press-start-2p-regular {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  main {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-family: 'Press Start 2P',  serif;
+    letter-spacing: .1em;
+    font-size: 45px;
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+  h2 {
+    font-family: 'Press Start 2P',  serif;
+    letter-spacing: .1em;
+    color: #fff;
+    transition: ease-in-out .25s;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  h2 ~ div {
+      margin-top: 15px;
+  }
+  
+  h2:hover {
+    color: #cf4b8e;
+    transform: translateX(-10px);
+  }
+  
+  
+  /**********************************/
+  /*==== CATALOGUE - BLOCK LEFT ====*/
+  /**********************************/
+  #catalogue {
+      width: 33%;
+      background: linear-gradient(180deg, rgba(238,153,191,1) 90%, rgba(210,89,149,1) 98%);
+    position: relative;
+  }
+  
+  #model_style, #bangs_style, #hair_style, #eyeshadow_style, #top_style, #bottom_style,
+   #socks_style, #shoes_style, #dresses_style, #belt_style, #bracelets_style, #purse_style, 
+   #eyeliner_style, #lipliner_style, #lipstick_style, #eyelashes_style, #face_style, #nails_style
+    .btn_reset {
+    margin: 20px 20px;
+  }
+  
+  .btn_style {
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 15px;
+    background-color: white;
+  }
+  
+  button.btn_style {
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: none;
+    transition: ease-in-out .25s;
+    box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.19);
+  }
+  
+  button.btn_style:hover {
+    border-width: 4px;
+    border-style: solid;
+    border-color: #cf4b8e;
+    transform: scale(1.4);
+  }
+  
+  .options {
+    display: flex;
+  }
+  .btn_model1{
+    background-image: url("../Mine/lightModel.png");
+  }
+
+  .btn_model2{
+    background-image: url("../Mine/mediumModel.png");
+  }
+  .btn_model3{
+    background-image: url("../Mine/mediumDarkModel.png");
+  }
+  .btn_model4{
+    background-image: url("../Mine/deepModel.png");
+  }
+
+
+  .btn_top_1 {
+    background-image: url("../Mine/pinkTop.png");
+  }
+  .btn_top_2 {
+    background-image: url("../Mine/greenTop.png");
+  }
+  .btn_top_3 {
+    background-image: url("../Mine/redTop.png");
+  }
+  
+  .btn_bottom_1 {
+    background-image: url("../Mine/Jeans.png");
+  }
+  .btn_bottom_2 {
+    background-image: url("../Mine/greenMiniSkirt.png");
+  }
+  .btn_bottom_3 {
+    background-image: url("../Mine/pinkMiniSkirt.png");
+  }
+
+  .btn_bottom_4 {
+    background-image: url("../Mine/redMiniSkirt.png");
+  }
+  
+  .btn_socks_1 {
+    background-image: url(../Mine/goldBangle.png);
+  }
+  .btn_socks_2 {
+    background-image: url(../Mine/goldBracelet.png);
+  }
+  .btn_socks_3 {
+    background-image: url(../Mine/silverBangle.pngg);
+  }
+  .btn_socks_4 {
+    background-image: url(../Mine/silverBracelet.png);
+  }
+  
+  .btn_shoes_1 {
+    background-image: url(../Mine/BlackBoots.png);
+  }
+  .btn_shoes_2 {
+    background-image: url(../Mine/brownBoots.png);
+  }
+  .btn_shoes_3 {
+    background-image: url(../Mine/pinkHeels.png);
+  }
+  
+.btn_dresses_1 {
+  background-image: url(../Mine/redDress.png);
+}
+
+.btn_dresses_2{
+  background-image: url(../Mine/pinkDress.png);
+}
+.btn_dresses_3{
+  background-image: url(../Mine/pinkDress.png);
+}
+
+.btn_bracelets_1 {
+  background-image: url(../Mine/goldBangle.png);
+}
+.btn_bracelets_2 {
+  background-image: url(../Mine/goldBracelet.png);
+}
+.btn_bracelets_3 {
+  background-image: url(../Mine/silverBangle.pngg);
+}
+.btn_bracelets_4 {
+  background-image: url(../Mine/silverBracelet.png);
+}
+
+
+
+
+
+
+
+/*need to make separate thumbnails for buttons*/
+.btn_bangs_1{
+    background-image: url("../Mine/blackWispyBangs.png");
+
+  }
+
+.btn_bangs_2{
+    background-image: url("../Mine/blackBluntBangs.png");
+
+  }
+
+
+.btn_bangs_3{
+    background-image: url("../Mine/blondeBluntBangs.png");
+
+  }
+
+.btn_bangs_4{
+    background-image: url(../Mine/blondeWhispyBangs.png);
+
+  }
+
+  .btn_hair_1 {
+    background-image: url(../Mine/blackBun.png);
+  }
+  .btn_hair_2 {
+    background-image: url(../Mine/blondeLongHairBack.png);
+  }
+  .btn_hair_3 {
+    background-image: url(../Mine/blondeBun.png);
+  }
+  
+  .btn_eyeshadow_1 {
+    background-image: url(../Mine/Eyeshadow1.png);
+  }
+  .btn_eyeshadow_2 {
+    background-image: url(../Mine/Eyeshadow2.png);
+  }
+  .btn_eyeshadow_3 {
+    background-image: url(../Mine/Eyeshadow3.png);
+  }
+  
+  
+
+
+
+  .btn_reset {
+    background-color: #FED;
+    font-size: 18px;
+    color: #000;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  
+  #randomizer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  
+  #randomizer button.btn_randomizer {
+    background-image: url('../Mine/Randomizer.jpg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 112px;
+    height: 154px;
+    border: 0;
+    cursor: pointer;
+    transition: ease-in-out .25s;
+  }
+  
+  #randomizer button.btn_randomizer:hover {
+    transform: scale(1.05);
+  }
+  
+  #randomizer span {
+    display: block;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', sans-serif;
+    letter-spacing: .1em;
+    font-weight: 600;
+    font-size: 1em;
+  }
+  
+  /***************************************/
+  /***************************************/
+  /*==== DRESSING-ROOM - MIDDLE BLOCK ====*/
+  /***************************************/
+  /***************************************/
+  #dressing-box {
+      width: 50%;
+      height: 750px;
+      width: 525px;
+      background: rgb(255, 221, 244);
+  }
+  
+  #galbox {
+    width: 700;
+    height: 525;
+    justify-content: center;
+    padding-top: 5vh;
+  }
+  
+  #model_selection {
+    background-image: none;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 525px;
+    position: absolute;
+  /*   margin: 20px 31px; */
+    z-index: 4;
+  }
+
+
+  /* hair DIV */
+
+  #bangs_selection {
+    background-image: none;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 525px;
+    position: absolute;
+  /*   margin: 20px 31px; */
+    z-index: 4;
+  }
+
+
+  #hair_selection {
+    background-image: none;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 525px;
+    position: absolute;
+  /*   margin: 20px 31px; */
+    z-index: 19;
+  }
+  
+  /* Eyeshadow DIV*/
+  #eyeshadow_selection {
+    background-image: none;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 525px;
+    position: absolute;
+    margin: 20px 31px;
+    z-index: 5;
+  }
+  
+  /* Tops DIV */
+  #top_selection {
+      background-image: none;
+      background-position: center top;
+      background-repeat: no-repeat;
+      width: 700px;
+      height: 525px;
+      position: absolute;
+  /*     margin: 19px 29px; */
+      z-index: 6;
+  }
+  
+  /* Bottoms DIV */
+  #bottom_selection {
+    background-image: none;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 525px;
+    position: absolute;
+  /*   margin: 20px 30px; */
+    z-index: 9;
+  }
+  
+  /* Socks DIV */
+  #socks_selection {
+    background-image: none;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 525px;
+    position: absolute;
+    margin: 20px 30px; 
+    z-index: 7;
+  }
+  
+  /* Shoes DIV */
+  #shoes_selection {
+    background-image: none;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 525px;
+    position: absolute;
+  /*   margin: 20px 30px; */
+    z-index: 8;
+  }
+  
+  #dresses_selection {
+    background-image: none;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 525px;
+    position: absolute;
+  /*   margin: 20px 30px; */
+    z-index: 10;
+  }
+  
+  #girl {
+    background: url("../Mine/mediumModel.png") top left transparent no-repeat;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 525px;
+    position: absolute;
+  /*   margin: 20px 30px; */
+    z-index: 1;
+  }
+  
+  /**********************************/
+  /*==== CATALOGUE - RIGHT BLOCK  ====*/
+  /**********************************/
+  #StylingRoom {
+    width: 33%;
+    background: linear-gradient(180deg, rgba(238,153,191,1) 90%, rgba(210,89,149,1) 98%);
+  position: relative;
+}
+
+/*need to make separate thumbnails for buttons*/
+.btn_bangs_1{
+  background-image: url("../Mine/blackWispyBangs.png");
+
+}
+
+.btn_bangs_2{
+  background-image: url("../Mine/blackBluntBangs.png");
+
+}
+
+
+.btn_bangs_3{
+  background-image: url("../Mine/blondeBluntBangs.png");
+
+}
+
+.btn_bangs_4{
+  background-image: url(../Mine/blondeWhispyBangs.png);
+
+}
+
+.btn_hair_1 {
+  background-image: url(../Mine/blackBun.png);
+}
+.btn_hair_2 {
+  background-image: url(../Mine/blondeLongHairBack.png);
+}
+.btn_hair_3 {
+  background-image: url(../Mine/blondeBun.png);
+}
+
+.btn_eyeshadow_1 {
+  background-image: url(../Mine/Eyeshadow1.png);
+}
+.btn_eyeshadow_2 {
+  background-image: url(../Mine/Eyeshadow2.png);
+}
+.btn_eyeshadow_3 {
+  background-image: url(../Mine/Eyeshadow3.png);
+}
+
+
+.btn_top_1 {
+  background-image: url("../Mine/pinkTop.png");
+}
+.btn_top_2 {
+  background-image: url("../Mine/greenTop.png");
+}
+.btn_top_3 {
+  background-image: url("../Mine/redTop.png");
+}
+
+.btn_bottom_1 {
+  background-image: url("../Mine/Jeans.png");
+}
+.btn_bottom_2 {
+  background-image: url("../Mine/greenMiniSkirt.png");
+}
+.btn_bottom_3 {
+  background-image: url("../Mine/pinkMiniSkirt.png");
+}
+
+.btn_bottom_4 {
+  background-image: url("../Mine/redMiniSkirt.png");
+}
+
+.btn_socks_1 {
+  background-image: url(../Mine/goldBangle.png);
+}
+.btn_socks_2 {
+  background-image: url(../Mine/goldBracelet.png);
+}
+.btn_socks_3 {
+  background-image: url(../Mine/silverBangle.pngg);
+}
+.btn_socks_4 {
+  background-image: url(../Mine/silverBracelet.png);
+}
+
+.btn_shoes_1 {
+  background-image: url(../Mine/BlackBoots.png);
+}
+.btn_shoes_2 {
+  background-image: url(../Mine/brownBoots.png);
+}
+.btn_shoes_3 {
+  background-image: url(../Mine/pinkHeels.png);
+}
+
+
+.btn_reset {
+  background-color: #FED;
+  font-size: 18px;
+  color: #000;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+
+  
+  
+  
+  
+  

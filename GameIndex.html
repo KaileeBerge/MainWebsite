@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head> 
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="GameStyle.css" />  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src = "GameCode.js" async></script>
+   <title> Dress Up Game </title>
+  </head>
+
+<main id="game">
+
+    <!-- Left column-->
+    <div id="catalogue">
+      <h1>Dressing room</h1>
+  
+      <p id="alert"></p> <!-- affiche des tests -->
+      <div id="randomizer"> 
+        <button class="btn_randomizer"></button>
+        <span>Random</span>
+      </div>
+      
+    <!-- Models -->
+       <div id="model_style">
+        <h2>Models:</h2>
+        <div id="model_choices" class="options">
+          <button class="btn_style btn_model1" value="url(../Mine/lightModel.png)"></button>
+          <button class="btn_style btn_model2" value="url(../Mine/mediumModel.png)"></button>
+          <button class="btn_style btn_model3" value="url(../Mine/mediumDarkModel.png)"></button>
+          <button class="btn_style btn_model4" value="url(../Mine/deepModel.png)"></button>
+          </div>
+        </div>
+
+      <!-- Tops -->
+      <div id="top_style">
+        <h2>Top:</h2>
+        <div id="tops_choices" class="options">
+          <button class="btn_style btn_top_1" value="url(../Mine/pinkTop.png)"></button>
+          <button class="btn_style btn_top_2" value="url(../Mine/greenTop.png)"></button>
+          <button class="btn_style btn_top_3" value="url(../Mine/redTop.png)"></button>
+        </div>
+      </div>
+        
+        <!-- Bottoms -->
+        <div id="bottom_style">
+          <h2>Bottom:</h2>
+          <div id="bottoms_choices" class="options">
+            <button class="btn_style btn_bottom_1" value="url(../Mine/Jeans.png)"></button>
+            <button class="btn_style btn_bottom_2" value="url(../Mine/greenMiniSkirt.png)"></button>
+            <button class="btn_style btn_bottom_3" value="url(../Mine/pinkMiniSkirt.png)"></button>
+            <button class="btn_style btn_bottom_4" value="url(../Mine/redMiniSkirt.png)"></button>
+        
+        </div>
+        </div>
+      
+      <!-- Socks -->
+      <div id="socks_style">
+        <h2>Socks:</h2>
+        <div id="socks_choices" class="options">
+          <button class="btn_style btn_socks_1" value="url(../Mine/goldBangle.png)"></button>
+          <button class="btn_style btn_socks_2" value="url(../Mine/goldBracelet.png)"></button>
+          <button class="btn_style btn_socks_3" value="url(../Mine/silverBangle.png)"></button>
+          <button class="btn_style btn_socks_4" value="url(../Mine/silverBracelet.png)"></button>
+        </div>
+      </div>
+      
+      <!-- Shoes -->
+      <div id="shoes_style">
+        <h2>Shoes:</h2>
+        <div id="shoes_choices" class="options">
+          <button class="btn_style btn_shoes_1" value="url(../Mine/blackBoots.png)"></button>
+          <button class="btn_style btn_shoes_2" value="url(../Mine/brownBoots.png)"></button>
+          <button class="btn_style btn_shoes_3" value="url(../Mine/pinkHeels.png)"></button>
+        </div>
+      </div>
+
+      <!--Dresses-->
+      <div id="dresses_style">
+        <h2>Dresses:</h2>
+        <div id="dresses_choices" class="options">
+          <button class="btn_style btn_dresses_1" value="url(../Mine/redDress.png)"></button>
+          <button class="btn_style btn_dresses_2" value="url(../Mine/pinkDress.png)"></button>
+          <button class="btn_style btn_dresses_3" value="url(../Mine/pinkDress.png)"></button>
+        </div>
+      </div>
+
+<!--Belts-->
+<div id="belt_style">
+  <h2>Belt:</h2>
+  <div id="belt_choices" class="options">
+    <button class="btn_style btn_belt_1" value="url(../Mine/redDress.png)"></button>
+    <button class="btn_style btn_belt_2" value="url(../Mine/pinkDress.png)"></button>
+  </div>
+</div>
+
+    <!--Purses-->
+    <div id="purse_style">
+      <h2>Purses:</h2>
+      <div id="purse_choices" class="options">
+        <button class="btn_style btn_purse_1" value="url(../Mine/redDress.png)"></button>
+        <button class="btn_style btn_purse_2" value="url(../Mine/pinkDress.png)"></button>
+      </div>
+    </div>
+
+       <!-- Bracelets -->
+       <div id="bracelets_style">
+        <h2>Bracelets:</h2>
+        <div id="bracelets_choices" class="options">
+          <button class="btn_style btn_bracelets_1" value="url(../Mine/goldBangle.png)"></button>
+          <button class="btn_style btn_bracelets_2" value="url(../Mine/goldBracelet.png)"></button>
+          <button class="btn_style btn_bracelets_3" value="url(../Mine/silverBangle.png)"></button>
+          <button class="btn_style btn_bracelets_4" value="url(../Mine/silverBracelet.png)"></button>
+
+        </div>
+      </div>
+
+  <!-- Necklaces -->
+       <div id="necklaces_style">
+        <h2>Necklaces:</h2>
+        <div id="shoes_choices" class="options">
+          <button class="btn_style btn_necklaces_1" value="url(../Mine/blackBoots.png)"></button>
+          <button class="btn_style btn_necklaces_2" value="url(../Mine/brownBoots.png)"></button>
+          <button class="btn_style btn_necklaces_3" value="url(../Mine/pinkHeels.png)"></button>
+        </div>
+      </div>
+
+ <!-- Earrings -->
+ <div id="earrings_style">
+  <h2>Earrings:</h2>
+  <div id="shoes_choices" class="options">
+    <button class="btn_style btn_earrings_1" value="url(../Mine/silverEarrings.png)"></button>
+    <button class="btn_style btn_earrings_2" value="url(../Mine/brownBoots.png)"></button>
+    <button class="btn_style btn_earrings_3" value="url(../Mine/pinkHeels.png)"></button>
+  </div>
+</div>
+
+      <!-- Overall Reset button -->
+      <div id="reset"> 
+        <button class="btn_reset">RESET</button>
+      </div>
+    </div><!-- end of left collum -->
+    
+    <!-- Middle Column -->
+    <div id="dressing-box">
+      <div id="galbox">
+        <div id =  "girl"></div> </div>
+        <div id = "model_selection"></div>
+        <div id = "costumes_selection"></div>
+        <div id = "bangs_selection"></div>
+        <div id = "hair_selection"></div>
+        <div id ="eyeshadow_selection"></div>
+        <div id ="eyeliner_selection"></div>
+        <div id ="eyelashes_selection"></div>
+        <div id ="Lipliner_selection"></div>
+        <div id ="Lipstick_selection"></div>
+        <div id ="top_selection"></div>
+        <div id ="bottom_selection"></div>
+        <div id ="socks_selection"></div>
+        <div id ="shoes_selection"></div>
+      </div>
+    </div>
+    
+<!-- Right column------------------------------>
+<div id="StylingRoom">
+  <h1>Styling Room</h1>
+ 
+<!-- Hair Styles - bangs -->
+<div id="bangs_style">
+  <h2>Bangs:</h2>
+  <div id="bangs_choices" class="options">
+    <button class="btn_style btn_bangs_1" value="url(../Mine/blackWispybangs.png)"></button>
+    <button class="btn_style btn_bangs_2" value="url(../Mine/blackBluntbangs.png)"></button>
+    <button class="btn_style btn_bangs_3" value="url(../Mine/blondeBluntbangs.png)"></button>
+    <button class="btn_style btn_bangs_4" value="url(../Mine/blondeWhispybangs.png)"></button>
+
+    <!-- Bouton reset -->
+    <div id="reset-bangs"> 
+      <button class="btn_reset-bangs">RESET</button>
+    </div>
+  </div>
+</div>
+
+<!-- Hair Styles - Back -->
+  <div id="hair_style">
+      <h2>Hair: </h2>
+      <div id="hair_choices" class="options">
+        <button class="btn_style btn_hair_1" value="url(../Mine/blackBun.png)"></button>
+        <button class="btn_style btn_hair_2" value="url(../Mine/blondeLongHairBack.png)"></button>
+        <button class="btn_style btn_hair_3" value="url(../Mine/blondeBun.png)"></button>
+        <!-- Bouton reset -->
+        <div id="reset-hair"> 
+          <button class="btn_reset-hair">RESET</button>
+        </div>
+      </div>
+    </div>
+
+<!-- Eyeshadow-->
+<div id="eyeshadow_style">
+  <h2>Eyeshadow:</h2>
+  <div id="eyeshadow_choices"  class="options">
+    <button class="btn_style btn_eyeshadow_1" value="url(../Mine/Eyeshadow1.png)"></button>
+    <button class="btn_style btn_eyeshadow_2" value="url(../Mine/Eyeshadow2.png)"></button>
+    <button class="btn_style btn_eyeshadow_3" value="url(../Mine/Eyeshadow3.png)"></button>
+    <!-- Bouton reset -->
+    <div id="reset-eyeshadow"> 
+      <button class="btn_reset-eyeshadow">RESET</button>
+    </div>
+  </div>
+</div>    
+  
+  <!-- Eyeliner-->
+  <div id="eyeliner_style">
+    <h2>Eyeliner:</h2>
+    <div id="eyeliner_choices"  class="options">
+      <button class="btn_style btn_eyeliner_1" value="url(../Mine/blackCateye.png)"></button>
+      <button class="btn_style btn_eyeliner_2" value="url(../Mine/Eyeshadow2.png)"></button>
+      <button class="btn_style btn_eyeliner_3" value="url(../Mine/Eyeshadow3.png)"></button>
+      <!-- Bouton reset -->
+      <div id="reset-eyeliner"> 
+        <button class="btn_reset-eyeliner">RESET</button>
+      </div>
+    </div>
+  </div>   
+
+
+  <!-- Eyelashes -->
+  <div id="eyelashes_style">
+    <h2>Eyelashes:</h2>
+    <div id="eyelashes_choices" class="options">
+      <button class="btn_style btn_eyelashes_1" value="url(../Mine/Lashes1.png)"></button>
+      <button class="btn_style btn_eyelashes_2" value="url(../Mine/lashes2.png)"></button>
+      <button class="btn_style btn_eyelashes_3" value="url(../Mine/redTop.png)"></button>
+    </div>
+  </div>
+    
+    <!-- LipLiner -->
+    <div id="lipliner_style">
+      <h2>Lip Liner:</h2>
+      <div id="lipliner_choices" class="options">
+        <button class="btn_style btn_lipliner_1" value="url(../Mine/brownLipLiner.png)"></button>
+        <button class="btn_style btn_lipliner_2" value="url(../Mine/pinkLipLiner.png)"></button>
+        <button class="btn_style btn_lipliner_3" value="url(../Mine/purpleLipLiner.png)"></button>
+        <button class="btn_style btn_lipliner_4" value="url(../Mine/redLipLiner.png)"></button>
+    
+    </div>
+    </div>
+  
+  <!-- Lipstick -->
+  <div id="lipstick_style">
+    <h2>Lipstick:</h2>
+    <div id="lipstick_choices" class="options">
+      <button class="btn_style btn_lipstick1" value="url(../Mine/pinkLipstick.png)"></button>
+      <button class="btn_style btn_lipstick2" value="url(../Mine/berryLipstick.png)"></button>
+      <button class="btn_style btn_lipstick3" value="url(../Mine/brownLipstick.png)"></button>
+      <button class="btn_style btn_lipstick4" value="url(../Mine/coralLipstick.png)"></button>
+      <button class="btn_style btn_lipstick5" value="url(../Mine/purpleLipstick.png)"></button>
+    </div>
+  </div>
+  
+  <!-- Face -->
+  <div id="face_style">
+    <h2>Face:</h2>
+    <div id="face_choices" class="options">
+      <button class="btn_style btn_face_1" value="url(../Mine/silverSeptum.png)"></button>
+      <button class="btn_style btn_face_2" value="url(../Mine/goldSeptum.png)"></button>
+      <button class="btn_style btn_face_3" value="url(../Mine/pinkFreckles.png)"></button>
+    </div>
+  </div>
+
+  <!--Nails--->
+  <div id="nails_style">
+    <h2>Nails:</h2>
+    <div id="nails_choices" class="options">
+      <button class="btn_style btn_nails_1" value="url(../Mine/pinkNails.png)"></button>
+      <button class="btn_style btn_nails_2" value="url(../Mine/redNails.png)"></button>
+    </div>
+  </div>
+  
+  <!-- Overall Reset button -->
+  <div id="reset"> 
+    <button class="btn_reset">RESET</button>
+  </div>
+</div><!-- end of left collum -->
+<a href="index.html">Back to Home</a>
+</br>
+  <a href="WebDevelopment.html"> Back to Web Development Projects</a>
+
+
+    <!--   Les Audios -->
+    <audio id="nav_audio">
+      <source src="https://queendezign.com/temp/sounds/mixkit-unlock-game-notification-253.wav" type="audio/wav"></source>
+    </audio>
+  
+    <audio id="h2_audio">
+      <source src="https://queendezign.com/temp/sounds/mixkit-player-select-notification-2037.mp3" type="audio/mp3"></source>
+    </audio>
+  </main>
